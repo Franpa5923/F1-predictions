@@ -52,7 +52,7 @@ qualifying_2025 = pd.DataFrame({
 qualifying_2025["CleanAirRacePace (s)"] = qualifying_2025["Driver"].map(clean_air_race_pace)
 
 # get weather data for miami
-API_KEY = "2934b77bde8ee3d18209b6c57c339c9c"
+API_KEY = ""
 weather_url = f"http://api.openweathermap.org/data/2.5/forecast?lat=25.7617&lon=-80.1918&appid={API_KEY}&units=metric"
 response = requests.get(weather_url)
 weather_data = response.json()
