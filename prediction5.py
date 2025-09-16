@@ -139,7 +139,7 @@ driver_wet_performance = {
 qualifying_2025["WetPerformanceFactor"] = qualifying_2025["Driver"].map(driver_wet_performance)
 
 
-API_KEY = "2934b77bde8ee3d18209b6c57c339c9c"
+API_KEY = ""
 weather_url = f"http://api.openweathermap.org/data/2.5/forecast?lat=21.4225&lon=39.1818&appid={API_KEY}&units=metric"
 response = requests.get(weather_url)
 weather_data = response.json()
