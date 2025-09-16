@@ -120,7 +120,7 @@ qualifying_2025["China_Position"] = qualifying_2025["Driver"].map(china_position
 
 
 # Weather Data
-API_KEY = "2934b77bde8ee3d18209b6c57c339c9c"
+API_KEY = ""
 weather_url = f"http://api.openweathermap.org/data/2.5/forecast?lat=34.8823&lon=136.5845&appid={API_KEY}&units=metric"
 response = requests.get(weather_url)
 weather_data = response.json()
