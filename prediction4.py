@@ -127,7 +127,7 @@ japan_positions = {
 qualifying_2025["Japan_Position"] = qualifying_2025["Driver"].map(japan_positions)
 
 # weather data
-API_KEY = "2934b77bde8ee3d18209b6c57c339c9c"
+API_KEY = ""
 weather_url = f"http://api.openweathermap.org/data/2.5/forecast?lat=26.0325&lon=50.5106&appid={API_KEY}&units=metric"
 response = requests.get(weather_url)
 weather_data = response.json()
